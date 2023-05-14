@@ -1,7 +1,13 @@
-#anaSayfaNavbar {
 
+#homeNav li{
+    font-size: 15px;
+    margin-left:60px;
 }
 
-#anaSayfaNavbar li{
-    font-size: 15px;
+.homepageBody {
+    background-color:gainsboro;
+}
+
+.homepageBG h5{
+    margin-top: 10px;
 }
