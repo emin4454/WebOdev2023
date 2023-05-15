@@ -1,13 +1,63 @@
 
-#homeNav li{
-    font-size: 15px;
-    margin-left:60px;
+.navbar .nav-link{
+    font-size: 17px;
+    margin-left: 20px;
 }
 
 .homepageBody {
     background-color:gainsboro;
 }
+.hero{
 
-.homepageBG h5{
-    margin-top: 10px;
+    padding-top: 415px;
+    padding-bottom :415px;
+    padding-right: 500px;
+
+    background-image: url(../backgrounds/buGuzelGibi.jpg);
+    background-size: cover;
+}
+.hero .yazi{
+    padding-left: 50px;
+    padding-right:50px;
+}
+.hero h4
+{
+    color:rgb(90, 54, 61);
+}
+.hero h1{
+    color:darkred;
+}
+
+.hero a img {
+    display: flex;
+    padding-left: 150px;
+    padding-right:100px;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.sehrimBody{
+    background-color: rgb(164, 171, 158);
+}
+.paragrafSehrim
+{
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.sehrimContainer{
+    padding-top: 100px;
+}
+.sehrimContainer div p
+{
+    padding-left: 10px;
+    padding-right:10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(54, 88, 54);
+    font-size: 25px;
+    color:rgb(255, 255, 255);
 }
