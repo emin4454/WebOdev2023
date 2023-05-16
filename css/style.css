@@ -73,3 +73,10 @@
 .sehrimContainer div div{
     color:rgb(24, 179, 0);
 }
+
+.sehrimContainer a{
+    font-size: 40px;
+    padding-top: 60px;
+    padding-left: 300px;
+    color: black;
+}
