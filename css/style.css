@@ -38,26 +38,38 @@
 }
 
 .sehrimBody{
-    background-color: rgb(164, 171, 158);
+    background-color: rgb(175, 203, 179);
 }
+
+#gecisliSlider img{
+    size: cover;
+}
+#gecisliSlider .nav-link{
+    font-size: 25px;
+}
+
+
 .paragrafSehrim
 {
     padding-left: 300px;
     padding-right: 300px;
-    padding-top: 100px;
+    padding-top: 5px;
     padding-bottom: 100px;
 }
 
 .sehrimContainer{
     padding-top: 100px;
 }
-.sehrimContainer div p
+.sehrimContainer div 
 {
     padding-left: 10px;
     padding-right:10px;
     padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: rgb(54, 88, 54);
-    font-size: 25px;
+    padding-bottom: 5px;
+    background-color: rgb(66, 78, 66);
+    font-size: 20px;
     color:rgb(255, 255, 255);
+}
+.sehrimContainer div div{
+    color:rgb(24, 179, 0);
 }
