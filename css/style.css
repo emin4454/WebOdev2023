@@ -80,3 +80,64 @@
     padding-left: 300px;
     color: black;
 }
+
+.mirasimizBody{
+    background-color:dimgray;
+    background-image:url(../backgrounds/backgroundMiras.jpg);
+    background-size:cover;
+}
+
+.mirasimizContainer {
+    padding-top:100px;
+    padding-right: 10px;
+}
+
+.mirasimizContainer .card{
+    background-color: #2C3333;
+    font-size: 25px;
+    color :aliceblue;
+    padding:45px;
+}
+
+.mirasimizListe{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.mirasimizListe .list-group-horizontal{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.benBody{
+    background-image:url(../backgrounds/backgroundBen.jpg);
+    background-size:cover;
+}
+
+.benContainer{
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+}
+.benContainer .card{
+    width: 60%;
+    opacity:1;
+    background-color: rgba(53, 54, 54, 0.447);
+    color :whitesmoke;
+    font-size: 25px;
+    margin-right:10%;
+}
+.benContainer p{
+    padding :10px;
+}
+.benContainer a{
+    padding-bottom: 20px;
+}
+.benContainerLast{
+    display: flex;
+    justify-content: center;
+}
