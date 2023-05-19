@@ -25,3 +25,18 @@
     padding: 50px;
     opacity: 0.75;
 }
+
+.mirasimizContainer .card{
+    background-color: rgba(30, 32, 33, 0.658);
+}
+
+.mirasimizListe .card{
+    padding: 5px;
+    background-color: rgba(102, 255, 0, 0.329);
+}
+
+.mirasimizListe .card ul{
+    opacity: 0.8;
+    color :white;
+    font-size: 25px;
+}

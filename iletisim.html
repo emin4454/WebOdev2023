@@ -29,7 +29,7 @@
                     <a class="nav-link" href="iletisim.html">İletişim</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="giris.html">giris</a>
+                    <a class="nav-link" href="giris.html">Giriş Yap</a>
                   </li>
                 </ul>
               </div>
@@ -42,7 +42,7 @@
                         <div class=" section-heading text-center">
                             <h1>İLETİŞİM</h1>
                         </div>
-                            <form action="iletisim.php" method="post" novalidate name="form">
+                            <form action="iletisim.php" method="POST" novalidate name="form">
                                 <div class="form-group">
                                      <input id="ad" type="text" class="form-control text-center" placeholder="İsminizi Giriniz" name="isim">
                                 </div>
@@ -50,8 +50,20 @@
                                       <input id="soyad" type="text" class="form-control text-center" placeholder="Soyisminizi Giriniz" name="soyisim">
                                 </div>
                                 <div class="form-group">
-                                  <input type="text" name="telefonNo" placeholder="Telefon Numaranızı Giriniz" class="form-control text-center" id="telefon">
+                                  <input type="text"  placeholder="Telefon Numaranızı Giriniz" class="form-control text-center" id="telefon" name="telefonNo">
                                 </div>
+                                <select class="form-control" name="cinsiyet" id="gender">
+                                    <option class="text-center">Erkek</option>
+                                    <option class="text-center">Kadın</option>
+                                    <option class="text-center">Belirtmek İstemiyorum</option>
+                                </select> 
+                                <div class="form-group">
+                                  <input type="text" name="emailIletisim" placeholder="Email Giriniz" class="form-control text-center" id="emaili">
+                                </div>
+                                <div class="mb-3">
+                                  <textarea class="form-control text-center" id="textarea" name ="textAlani" placeholder="Mesajınız" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-outline-primary"style="width:100px" name="send" >Gönder</button>
                             </form>
                     </div>
               </div>
