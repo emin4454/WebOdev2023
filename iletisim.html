@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style2.css">
 
+
   </head>
 
 
   <body class="iletisimBody">
+    <div id="app">
 
-        <nav class="navbar navbar-expand-lg bg-warning bg-gradient fixed-top" data-bs-theme="dark" id="iletisimNav">
+        <nav class="navbar navbar-expand-lg bg-body bg-gradient fixed-top" data-bs-theme="dark" id="iletisimNav">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html">Ana Sayfa</a>
               <div class="collapse navbar-collapse" id="navbarNav">
@@ -44,13 +46,13 @@
                         </div>
                             <form action="iletisim.php" method="POST" novalidate name="form">
                                 <div class="form-group">
-                                     <input id="ad" type="text" class="form-control text-center" placeholder="İsminizi Giriniz" name="isim">
+                                     <input id="isim" type="text" class="form-control text-center" placeholder="İsminizi Giriniz" name="isim" v-model="nameF">
                                 </div>
                                 <div class="form-group">
-                                      <input id="soyad" type="text" class="form-control text-center" placeholder="Soyisminizi Giriniz" name="soyisim">
+                                      <input id="soyisim" type="text" class="form-control text-center" placeholder="Soyisminizi Giriniz" name="soyisim" v-model = "surname">
                                 </div>
                                 <div class="form-group">
-                                  <input type="text"  placeholder="Telefon Numaranızı Giriniz" class="form-control text-center" id="telefon" name="telefonNo">
+                                  <input type="text"  placeholder="Telefon Numaranızı Giriniz" class="form-control text-center"  id="telefon" name="telefonNo" v-model="phoneNum">
                                 </div>
                                 <select class="form-control" name="cinsiyet" id="gender">
                                     <option class="text-center">Erkek</option>
@@ -58,17 +60,23 @@
                                     <option class="text-center">Belirtmek İstemiyorum</option>
                                 </select> 
                                 <div class="form-group">
-                                  <input type="text" name="emailIletisim" placeholder="Email Giriniz" class="form-control text-center" id="emaili">
+                                  <input type="text" name="emailIletisim" placeholder="Email Giriniz" class="form-control text-center" id="emaili" v-model="email">
                                 </div>
                                 <div class="mb-3">
-                                  <textarea class="form-control text-center" id="textarea" name ="textAlani" placeholder="Mesajınız" rows="3"></textarea>
+                                  <textarea class="form-control text-center" id="textarea" name ="textAlani" placeholder="Mesajınız" rows="3" v-model="message" ></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-outline-primary"style="width:100px" name="send" >Gönder</button>
-                            </form>
+                                 <button v-if="canGonder" type="submit" class="btn btn-outline-primary"style="width:100px" name="send" >Gönder</button>
+                              </form>
+                              <div class="d-flex justify-content-between">
+                                <button v-on:click="clearTheForms()" type="submit" class="btn btn-outline-primary" style="width:100px" >Temizle</button>
+                                <button v-on:click="checkTheForms()" v-if="!canGonder" type="submit" class="btn btn-outline-primary"style="width:100px">Kontrol</button>
+                              </div>
+                                <h2>{{ outputString }}</h2>
                     </div>
               </div>
           </section>
-
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        </div>    
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="app.js"></script>
   </body>
 </html>
