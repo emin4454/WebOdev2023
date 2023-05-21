@@ -13,7 +13,7 @@
     padding-bottom :415px;
     padding-right: 500px;
 
-    background-image: url(../backgrounds/buGuzelGibi.jpg);
+    background-image: url(../backgrounds/hosgeldiniz.jpg);
     background-size: cover;
 }
 .hero .yazi{
@@ -113,7 +113,7 @@
 }
 
 .benBody{
-    background-image:url(../backgrounds/backgroundBen.jpg);
+    background-image:url(../backgrounds/ben.webp);
     background-size:cover;
 }
 
