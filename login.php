@@ -1,7 +1,7 @@
 <?php
 $username=$_POST["kullaniciAdi"];
 $password=$_POST["sifrem"];
-$myUsername = "b221210377@gmail.com";
+$myUsername = "b221210377@sakarya.edu.tr";
 $myPassword = "b221210377";
 
 if($username==$myUsername && $password == $myPassword)

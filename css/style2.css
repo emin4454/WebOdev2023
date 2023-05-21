@@ -111,3 +111,18 @@
     background-color: rgba(9, 8, 8, 0.685);
     color: white;
 }
+
+.ozgecmisCon{
+    margin-top: 300px;
+}
+
+.ozgecmisBody{
+    background-color: rgba(129, 161, 224, 0.348);
+}
+.ozgecmisCon .card{
+    background-color: rgba(227, 227, 227, 0.585);
+}
+
+.ozgecmisCon article p{
+    font-size: 20px;
+}
