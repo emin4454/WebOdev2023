@@ -59,3 +59,55 @@
     background-color: rgb(166, 166, 167);
     background-size: cover;
 }
+
+.sapancaBody{
+    background-image: url(../sehrimFotograflar/sapanca.jpg);
+    background-size :cover ;
+    background-repeat: no-repeat;
+    background-color: rgb(70, 158, 70);
+}
+.sapancaContainer{
+    margin-top: 500px;
+    display: flex;
+    justify-content: center;
+}
+.sapancaContainer .card{
+    width: 600px;
+    font-size: 35px;
+    background-color: rgba(105, 105, 105, 0.685);
+    color: white;
+}
+
+.poyrazlarBody{
+    background-image: url(../sehrimFotograflar/poyrazlar.webp);
+    background-size :cover ;
+    background-repeat: no-repeat;
+    background-color: rgb(70, 158, 70);
+}
+
+.sakaryaMuzesiBody{
+    background-image: url(../sehrimFotograflar/sakaryaMuzesi.jpg);
+    background-size :cover ;
+    background-repeat: no-repeat;
+    background-color: rgb(70, 158, 70);
+}
+
+.kartepeBody{
+    background-image: url(../sehrimFotograflar/kartepe.jpg);
+    background-size :cover ;
+    background-repeat: no-repeat;
+    background-color: rgb(70, 158, 70);
+}
+
+.kartepeContainer{
+    margin-top: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.kartepeContainer .card{
+    width: 600px;
+    font-size: 35px;
+    background-color: rgba(9, 8, 8, 0.685);
+    color: white;
+}
